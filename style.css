@@ -1,0 +1,125 @@
+.parent-grid{
+    background-color: blue;
+    display: grid;
+    grid-template-columns: 30%70%;
+    grid-auto-rows: minmax(1000px,auto);
+}
+
+.profile{
+    text-align: center;
+    background-color: rgb(59, 197, 243);
+}
+.profile img {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    align-items: center;
+}
+.left-column{
+    background-color: rgba(13, 1, 1, 0.929);
+    color: white;
+}
+h3{
+    text-align: left;
+}
+.contact{
+    margin: 10%;
+    background: color black;
+}
+ul{
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+li{
+    text-align: left;
+}
+.icon{
+    width: 50px;
+}
+
+.Phone{
+    display: grid;
+    grid-template-columns: 20%80%;
+}
+  .email{
+    display: grid;
+    grid-template-columns: 20%80%;
+}
+.home{
+    display: grid;
+    grid-template-columns: 20%80%;
+}
+.language{
+    display: grid;
+    grid-template-columns: 30%70%;
+    overflow: hidden;
+}
+
+
+.right-column{
+    margin: 5%;
+}
+
+
+.skills {
+    margin-top: 20px; /* Adjust spacing as needed */
+    display: grid;
+    grid-template-columns: 50%50%;
+  }
+  
+  .skill {
+    margin-bottom: 10px; /* Adjust spacing between skills as needed */
+    margin: 10px;
+  }
+  
+  .skill-name { 
+    font-weight: bold;
+    line-height: 2em;
+  }
+  
+.progress {
+    background-color: #ccc;
+    height: 10px; /* Height of the progress bar */
+    /* border-radius: 5px; */ 
+    overflow: hidden; /* Hide overflowing progress */
+  }
+  
+  .progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #4CAF50; /* Color of the progress bar */
+    transition: width 0.5s ease; /* Smooth transit*/
+  }
+
+.skill{
+    display: grid;
+    grid-template-columns: 100%100%;
+}
+
+
+.reference{
+    display: grid;
+    grid-template-columns: 50%50%;
+}
+/* Target the <h4> element with the class "developer" */
+h4.developer {
+    margin-bottom: 0; /* Remove bottom margin to reduce spacing */
+  }
+  
+  /* Target the <h4> element within the <div> with class "expe" */
+  .expe h4 {
+    margin-top: 0; /* Remove top margin to reduce spacing */
+  }
+  .expe{
+    margin-left: 4%;
+  }
+  
+
+
+@media screen and (max-width: 786px) {
+    .parent-grid {
+        grid-template-columns: 100%;
+    }
+}/* Responsive design */
